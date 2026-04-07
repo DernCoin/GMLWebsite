@@ -411,26 +411,22 @@ button:focus-visible {
 
 .scroller-section {
   background: #f5faf7;
-  overflow: hidden;
 }
 
 .scroller-track {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(240px, 320px);
+  grid-auto-columns: minmax(220px, 1fr);
   gap: 0.8rem;
   overflow-x: auto;
-  padding-bottom: 0.9rem;
-  margin-bottom: 0.25rem;
+  padding-bottom: 0.25rem;
   scroll-snap-type: x mandatory;
-  align-items: stretch;
 }
 
 .scroller-card {
   border: 1px solid #c8ddd0;
   background: #fff;
   scroll-snap-align: start;
-  height: 100%;
 }
 
 .scroller-card img {
