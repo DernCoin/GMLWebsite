@@ -166,7 +166,7 @@ button:focus-visible {
   background: var(--green-100);
   border-top: 1px solid var(--neutral-200);
   border-bottom: 1px solid var(--neutral-200);
-  padding: 1.6rem 0 1.9rem;
+  padding: 1.1rem 0 1.2rem;
 }
 
 .quick-actions h1 {
@@ -175,7 +175,7 @@ button:focus-visible {
 }
 
 .quick-actions p {
-  margin: 0.45rem 0 1rem;
+  margin: 0.25rem 0 0.7rem;
   max-width: 72ch;
   color: var(--text-700);
 }
@@ -187,14 +187,17 @@ button:focus-visible {
 }
 
 .action-btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
   text-decoration: none;
   text-align: center;
   background: #fff;
   color: var(--green-900);
   border: 1px solid #b5d6c2;
   border-bottom-width: 3px;
-  padding: 0.75rem;
+  padding: 0.6rem;
   font-weight: 700;
 }
 
@@ -203,7 +206,7 @@ button:focus-visible {
 }
 
 .featured-slider {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 .slider {
@@ -229,7 +232,7 @@ button:focus-visible {
 }
 
 .slide-content {
-  padding: 1.5rem;
+  padding: 1.1rem;
   background: #fff;
 }
 
@@ -293,7 +296,7 @@ button:focus-visible {
 }
 
 .section {
-  padding: 2.2rem 0;
+  padding: 1.4rem 0;
 }
 
 .section.muted {
@@ -305,7 +308,7 @@ button:focus-visible {
   justify-content: space-between;
   align-items: baseline;
   gap: 0.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 .section-header h2 {
@@ -336,7 +339,7 @@ button:focus-visible {
 
 .card {
   border: 1px solid var(--neutral-200);
-  padding: 1rem;
+  padding: 0.85rem;
   background: #fff;
   box-shadow: var(--shadow-sm);
 }
@@ -366,7 +369,7 @@ button:focus-visible {
 .event-list li,
 .book-list li {
   border-bottom: 1px solid var(--neutral-200);
-  padding: 0.85rem 0;
+  padding: 0.65rem 0;
 }
 
 .event-list h3 {
@@ -382,7 +385,7 @@ button:focus-visible {
 .panel {
   border: 1px solid #bfd8c9;
   background: #f7fbf8;
-  padding: 1rem;
+  padding: 0.85rem;
   height: fit-content;
 }
 
@@ -403,7 +406,57 @@ button:focus-visible {
 .resource-card {
   border: 1px solid var(--neutral-200);
   background: #fff;
-  padding: 1rem;
+  padding: 0.85rem;
+}
+
+.scroller-section {
+  background: #f5faf7;
+  overflow: hidden;
+}
+
+.scroller-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(240px, 320px);
+  gap: 0.8rem;
+  overflow-x: auto;
+  padding-bottom: 0.9rem;
+  margin-bottom: 0.25rem;
+  scroll-snap-type: x mandatory;
+  align-items: stretch;
+}
+
+.scroller-card {
+  border: 1px solid #c8ddd0;
+  background: #fff;
+  scroll-snap-align: start;
+  height: 100%;
+}
+
+.scroller-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.scroller-card div {
+  padding: 0.75rem;
+}
+
+.chip {
+  margin: 0 0 0.35rem;
+  color: var(--green-800);
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.scroller-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.scroller-card p {
+  margin: 0.35rem 0 0;
 }
 
 .book-list span {

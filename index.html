@@ -9,6 +9,7 @@
     />
     <title>Gibson Memorial Library</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://creston.biblionix.com/feeds/apollo_feeds.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -66,13 +67,19 @@
             register for events, and access digital resources.
           </p>
           <div class="action-grid">
-            <a class="action-btn" href="#">Catalog</a>
-            <a class="action-btn" href="#">My Account</a>
-            <a class="action-btn" href="#hours-location">Hours &amp; Location</a>
-            <a class="action-btn" href="#events">Events Calendar</a>
-            <a class="action-btn" href="#">Get a Library Card</a>
-            <a class="action-btn" href="#digital-resources">Digital Library / eBooks</a>
-            <a class="action-btn" href="#contact">Contact Us</a>
+            <a class="action-btn" href="#"><span aria-hidden="true">📚</span> Catalog</a>
+            <a class="action-btn" href="#"><span aria-hidden="true">👤</span> My Account</a>
+            <a class="action-btn" href="#hours-location"
+              ><span aria-hidden="true">🕒</span> Hours &amp; Location</a
+            >
+            <a class="action-btn" href="#events"
+              ><span aria-hidden="true">🗓️</span> Events Calendar</a
+            >
+            <a class="action-btn" href="#"><span aria-hidden="true">🪪</span> Get a Library Card</a>
+            <a class="action-btn" href="#digital-resources"
+              ><span aria-hidden="true">💻</span> Digital Library / eBooks</a
+            >
+            <a class="action-btn" href="#contact"><span aria-hidden="true">☎️</span> Contact Us</a>
           </div>
         </div>
       </section>
@@ -167,6 +174,61 @@
               <h3>Research Help</h3>
               <p>Ask a librarian for help with homework, family history, or local information.</p>
               <a href="#contact">Ask Us</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section scroller-section" aria-labelledby="upcoming-scroller-heading">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="upcoming-scroller-heading">New &amp; Upcoming Scroller</h2>
+            <a class="text-link" href="#">See all new arrivals</a>
+          </div>
+          <div class="scroller-track" role="list" aria-label="New and upcoming highlights">
+            <article class="scroller-card" role="listitem">
+              <img
+                src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=760&q=80"
+                alt="Stack of newly arrived books"
+              />
+              <div>
+                <p class="chip"><span aria-hidden="true">🆕</span> New Arrival</p>
+                <h3>Fresh Fiction Picks</h3>
+                <p>Popular mysteries and page-turners just added this week.</p>
+              </div>
+            </article>
+            <article class="scroller-card" role="listitem">
+              <img
+                src="https://images.unsplash.com/photo-1526243741027-444d633d7365?auto=format&fit=crop&w=760&q=80"
+                alt="Person browsing movie cases in a library"
+              />
+              <div>
+                <p class="chip"><span aria-hidden="true">🎬</span> Coming Soon</p>
+                <h3>New Movies on Hold</h3>
+                <p>Reserve upcoming releases before they hit the shelves.</p>
+              </div>
+            </article>
+            <article class="scroller-card" role="listitem">
+              <img
+                src="https://images.unsplash.com/photo-1519791883288-dc8bd696e667?auto=format&fit=crop&w=760&q=80"
+                alt="Smartphone and headphones for audiobooks"
+              />
+              <div>
+                <p class="chip"><span aria-hidden="true">🎧</span> Hot List</p>
+                <h3>Upcoming Audiobooks</h3>
+                <p>Place holds now for next month's most requested titles.</p>
+              </div>
+            </article>
+            <article class="scroller-card" role="listitem">
+              <img
+                src="https://images.unsplash.com/photo-1457694587812-e8bf29a43845?auto=format&fit=crop&w=760&q=80"
+                alt="Colorful children's books on display"
+              />
+              <div>
+                <p class="chip"><span aria-hidden="true">👨‍👩‍👧‍👦</span> Family Pick</p>
+                <h3>Kids Favorites Next Up</h3>
+                <p>Picture books and read-alongs releasing in upcoming weeks.</p>
+              </div>
             </article>
           </div>
         </div>
@@ -301,6 +363,7 @@
             <div class="section-header">
               <h2>New &amp; Noteworthy</h2>
             </div>
+            <div data-apollo_feed="recent_added"></div>
             <ul class="book-list">
               <li>
                 <strong>The River at Dawn</strong>
